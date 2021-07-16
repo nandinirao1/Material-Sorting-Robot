@@ -8,7 +8,7 @@ This project is a robotic arm that uses object detection to distinguish between 
 headstone image goes here
   
 # First Milestone
-My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint. 
+My first milestone was setting up my Raspberry Pi and then training my object detection model. After setting up the Raspberry Pi, I found a pre labelled version of the trashnet dataset, which has images of materials such as glass, paper, cardboard, plastic, metal, and trash. I  found a pre trained model on Tensorflow (mobilenet V2) to customize in order to train my model. 
 
 <!-- milestone video here-->
 milestone video coming soon 
