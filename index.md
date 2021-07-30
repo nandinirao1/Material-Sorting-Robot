@@ -8,7 +8,9 @@ This project is a robotic arm that uses object detection to distinguish between 
 headstone image goes here
   
 # First Milestone
-My first milestone was setting up my Raspberry Pi and then training my object detection model. After setting up the Raspberry Pi, I found a pre labelled version of the trashnet dataset, which has images of materials such as glass, paper, cardboard, plastic, metal, and trash. I  found a pre trained model on Tensorflow (mobilenet V2) to customize in order to train my model. 
+<p>My first milestone was setting up my Raspberry Pi and building and controlling my robotic arm. The parts for the robotic arm came in a kit. To build it, I just assembled the provided parts. The grabbing attachment could be attached horizontally or vertically on the arm, so I decided to keep it vertical so that it would be easier to grab items on the ground. The  arm uses 4 servo motors - 1 to control the base, 2 to control the arm, and 1 to control the grabbing attachment.</p> <p>After assembling the arm, I wired the servo motors. Each servo motor is connected to 0V, 5V, and a GPIO pin. A diagram of the wiring can be found below. When I finished wiring, my next step was to program the arm to pick an object up, move, and drop it somewhere else. You can find the code I used to program the arm to do this below. My next step will be to train a machile learning model so that eventually, the robot's movements will depend on what material it recognizes in front of it, in contrast to the current hard coded software.</p> 
+
+
 
 <!-- milestone video here-->
 milestone video coming soon 
