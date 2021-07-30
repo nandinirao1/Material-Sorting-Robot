@@ -10,11 +10,39 @@ headstone image goes here
 # First Milestone
 <p>My first milestone was setting up my Raspberry Pi and building and controlling my robotic arm. The parts for the robotic arm came in a kit. To build it, I just assembled the provided parts. The grabbing attachment could be attached horizontally or vertically on the arm, so I decided to keep it vertical so that it would be easier to grab items on the ground. The  arm uses 4 servo motors - 1 to control the base, 2 to control the arm, and 1 to control the grabbing attachment.</p> <p>After assembling the arm, I wired the servo motors. Each servo motor is connected to 0V, 5V, and a GPIO pin. A diagram of the wiring can be found below. When I finished wiring, my next step was to program the arm to pick an object up, move, and drop it somewhere else. You can find the code I used to program the arm to do this below. My next step will be to train a machine learning model so that eventually, the robot's movements will depend on what material it recognizes in front of it, in contrast to the current hard coded software.</p> 
 
+
+Code to control the robotic arm: 
 ```python
-print("Hello")
-x=3
-print(x)
+from gpiozero import Servo
+from time import sleep
+base = Servo(4)
+
+horizontal = Servo(17)
+vertical = Servo(18)
+gripper = Servo(27)
+try:
+    while True:
+        base.mid()
+        sleep(0.5)
+        horizontal.mid()
+        sleep(0.5)
+        vertical.min()
+        sleep(0.5)
+        gripper.min()
+        sleep(0.5)
+        vertical.max()
+        sleep(0.5)
+        base.max()
+        sleep(0.5)
+        vertical.min()
+        sleep(0.5)
+        gripper.max()
+        sleep(0.5)
+        
+except KeyboardInterrupt:
+    print("Program stopped")
 ```
+
 
 
 <!-- milestone video here-->
