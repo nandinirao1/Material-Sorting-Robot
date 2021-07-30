@@ -42,6 +42,9 @@ except KeyboardInterrupt:
     print("Program stopped")
 ```
 
+Circuit Diagram:
+<img src = "/Screenshot%20(350).png">
+
 
 
 <!-- milestone video here-->
