@@ -11,7 +11,7 @@ headstone image goes here
 <p>My first milestone was setting up my Raspberry Pi and building and controlling my robotic arm. The parts for the robotic arm came in a kit. To build it, I just assembled the provided parts. The grabbing attachment could be attached horizontally or vertically on the arm, so I decided to keep it vertical so that it would be easier to grab items on the ground. The  arm uses 4 servo motors - 1 to control the base, 2 to control the arm, and 1 to control the grabbing attachment.</p> <p>After assembling the arm, I wired the servo motors. Each servo motor is connected to 0V, 5V, and a GPIO pin. A diagram of the wiring can be found below. When I finished wiring, my next step was to program the arm to pick an object up, move, and drop it somewhere else. You can find the code I used to program the arm to do this below. My next step will be to train a machine learning model so that eventually, the robot's movements will depend on what material it recognizes in front of it, in contrast to the current hard coded software.</p> 
 
 
-Code to control the robotic arm: 
+**Code to control the robotic arm:** 
 ```python
 from gpiozero import Servo
 from time import sleep
@@ -42,7 +42,8 @@ except KeyboardInterrupt:
     print("Program stopped")
 ```
 
-Circuit Diagram:
+**Circuit Diagram:**
+
 <img src = "/Screenshot%20(350).png">
 
 
