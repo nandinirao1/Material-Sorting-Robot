@@ -15,28 +15,27 @@ Code to control the robotic arm:
 ```python
 from gpiozero import Servo
 from time import sleep
-base = Servo(4)
-
-horizontal = Servo(17)
-vertical = Servo(18)
-gripper = Servo(27)
+base = Servo(4) #servo controlling the base
+horizontal = Servo(17) #servo on the arm controlling horizontal movement
+vertical = Servo(18) #servo on the arm controlling vertical movement
+gripper = Servo(27) #servo controlling the gripping attachment 
 try:
     while True:
-        base.mid()
+        base.mid() #moves arm to the front
         sleep(0.5)
-        horizontal.mid()
+        horizontal.mid() #extends arm 
         sleep(0.5)
-        vertical.min()
+        vertical.min() #lowers arm
         sleep(0.5)
-        gripper.min()
+        gripper.min() #picks up object
         sleep(0.5)
-        vertical.max()
+        vertical.max() #lifts arm
         sleep(0.5)
-        base.max()
+        base.max() #moves robot around its base to a different position
         sleep(0.5)
-        vertical.min()
+        vertical.min() #lowers arm
         sleep(0.5)
-        gripper.max()
+        gripper.max() #releases object 
         sleep(0.5)
         
 except KeyboardInterrupt:
