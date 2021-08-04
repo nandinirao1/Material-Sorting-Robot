@@ -44,7 +44,7 @@ except KeyboardInterrupt:
 
 **Circuit Diagram:**
 
-<img src = "circuit.png">
+![image](circuit.png)
 
 
 
