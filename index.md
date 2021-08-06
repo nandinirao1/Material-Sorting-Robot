@@ -53,7 +53,7 @@ milestone video coming soon
 <img src = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif">
 
 # Second Milestone
-My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint.
+<p>My second milestone was training my object detection model. I decided to use a pretrained model, the SSD MobileNet V2, to do this. I started by preprocessing my data, which I got from [this dataset](https://github.com/bandofpv/Trash_Sorting_Robot). The dataset contains around 2500 images of materials like trash, plastic, and paper, among others. You can find the code I used to preprocess the data below. <p> My next step was retraining the object detection model. (will add more details once I finish). You can find the code I used to retrain the model below. 
 
 <!-- milestone video here-->
 milestone video coming soon 
@@ -61,7 +61,7 @@ milestone video coming soon
 # Final Milestone
   
 
-My first milestone was setting up and hooking up the Raspberry Pi and all the necessary components onto my tv. The heatsinks, the sd card, and the controller were all added to ensure that the Raspberry Pi was working. Instead of the Raspberry Pi Os software, I had to first download a different software called Retro Pie. With Retro Pie, I needed to download an Imager for Raspberry Pi. Raspberry Pi Imager automatically downloads a list of the latest versions of Raspbian supported by the Raspberry Pi. Raspbian is the typical Raspberry Pi Os software, the one I needed on the Raspberry Pi was Retro Pi. With the included SD card, I plugged in the SD into my computer and launched the Imager. The imager allowed me to set the Operating System to Retro Pi instead of Raspbian onto the SD card. With the OS imaged onto the SD, I plugged the SD card back into the Raspberry Pi and rebooted the system and Retro Bi booted up.
+My final milestone was integrating my object detection model to the Raspberry Pi and using it to control my robotic arm. 
 
 <!-- milestone video here-->
 milestone video coming soon 
