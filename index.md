@@ -53,7 +53,7 @@ milestone video coming soon
 <img src = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif">
 
 # Second Milestone
-<p>My second milestone was training my object detection model. I decided to use a pretrained model, the SSD MobileNet V2, to do this. I started by preprocessing my data, which I got from [this dataset](https://github.com/bandofpv/Trash_Sorting_Robot). The dataset contains around 2500 images of materials like trash, plastic, and paper, among others. You can find the code I used to preprocess the data below. <p> My next step was retraining the object detection model. (will add more details once I finish). You can find the code I used to retrain the model below. 
+<p>My second milestone was training my object detection model. I decided to use a pretrained model, the SSD MobileNet V2, to do this. I started by preprocessing my data, which I got from this dataset: https://github.com/bandofpv/Trash_Sorting_Robot. The dataset contains around 2500 images of materials like trash, plastic, and paper, among others. You can find the code I used to preprocess the data below. <p> My next step was retraining the object detection model. (will add more details once I finish). You can find the code I used to retrain the model below. 
 
 <!-- milestone video here-->
 milestone video coming soon 
