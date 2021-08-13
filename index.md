@@ -159,7 +159,7 @@ milestone video coming soon
 # Final Milestone
   
 
-My final milestone was integrating my object detection model to the Raspberry Pi and using it to control my robotic arm. 
+My final milestone was integrating my object detection model to the Raspberry Pi and using it to control my robotic arm. Since I decided to test out the original model instead of starting by using my own, I cloned the github on my raspberry pi. I added my camera to the Raspberry Pi, and then tried running the code. However, there were many errors, and when I imported Tensorflow, it didn't work. As a result, on the raspberry pi, the robot wasn't working. I'm currently in the process of debugging and reinstalling packages to hopefully fix this issue. 
 
 <!-- milestone video here-->
 milestone video coming soon 
