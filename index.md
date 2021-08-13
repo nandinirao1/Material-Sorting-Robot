@@ -53,7 +53,10 @@ except KeyboardInterrupt:
 
 
 # Second Milestone
-<p>My second milestone was training my object detection model. I decided to use a pretrained model, the SSD MobileNet V2, to do this. I started by preprocessing my data, which I got from this dataset: https://github.com/bandofpv/Trash_Sorting_Robot. The dataset contains around 2500 images of materials like trash, plastic, and paper, among others. You can find the code I used to preprocess the data below. <p> My next step was retraining the object detection model. (will add more details once I finish). You can find the code I used to retrain the model below. 
+<p>My second milestone was training my object detection model. I decided to use a pretrained model, the SSD MobileNet V2, to do this. I started by finding a dataset which worked for me, and found this one: https://github.com/bandofpv/Trash_Sorting_Robot. This dataset has over 2500 images of glass, trash, plastic, paper, metal, and other such materials. <p> Training the model took me multiple attempts. My first try was to train the model using the TFRecord format. The TFRecord format is an easier way to store a sequence of binary records. I started by preprocessing my data. First, I cloned the github with the data I was using like so:
+```python
+! git clone https://github.com/bandofpv/Trash_Sorting_Robot.git 
+```
 
 <!-- milestone video here-->
 milestone video coming soon 
